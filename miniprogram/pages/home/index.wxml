@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<view class="container">
+  <view catchtap="add">添加</view>
+  <view catchtap="change">改变</view>
+  <view catchtap="getAll">打印所有数据</view>
+</view>
