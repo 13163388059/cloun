@@ -29,12 +29,8 @@ Page({
   },
   getAll() {
     const db = wx.cloud.database();
-    db.collection('numbers').where({
-      _openid: "oBKO94gDelHI0dwHxTrH82OPvVVY"
-    }).get({
-      success: res => {
-        console.log(res)
-      }
+    db.collection('numbers').get().then(res => {
+      console.log(res)
     })
   },
   onLoad: function () {
